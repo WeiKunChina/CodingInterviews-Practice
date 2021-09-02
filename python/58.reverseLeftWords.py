@@ -1,0 +1,16 @@
+class Solution(object):
+    def reverseLeftWords(self, s, n):
+        """
+        :type s: str
+        :type n: int
+        :rtype: str
+        """
+        return s[n:] + s[:n]
+
+    def reverseLeftWordsAdd(self, s, n):
+        """
+        :type s: str
+        :type n: int
+        :rtype: str
+        """
+        return str(s + s)[n: len(s) + n]
